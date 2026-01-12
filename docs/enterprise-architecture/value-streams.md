@@ -41,6 +41,6 @@ Os **fluxos de valor** representam a série de etapas que uma organização real
 - Regularly review and refine value streams to adapt to changing customer needs and market conditions.
 - Implement feedback loops to gather insights from stakeholders and make data-driven decisions.
 
-> **Illustration GIF** (replace with real link):
+
 >
 > ![Value Streams](https://example.com/gifs/value-streams.gif streams, organizations can enhance their ability to deliver high-quality products and services efficiently, ultimately leading to greater customer satisfaction and business success.

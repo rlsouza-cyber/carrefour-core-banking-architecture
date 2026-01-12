@@ -45,6 +45,5 @@
 - **Value Objects**: Address, Document.
 - **Services**: Cashback calculation service, notification service.
 
-> **Illustration GIF** (replace with real link):
 >
-> ![Business Capabilities](https://
+>

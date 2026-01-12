@@ -93,7 +93,6 @@ Value chain analysis is a strategic tool used to identify the primary and suppor
    - Organizational structure and management systems.
    - Governance and compliance frameworks.
 
-> **Illustration GIF** (replace with real link):
 >
 > !Value Chain
 

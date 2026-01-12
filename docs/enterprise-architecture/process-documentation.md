@@ -53,6 +53,6 @@
 - Integration with legacy systems via APIs.
 - Centralized monitoring and traceability.
 
-> **Illustration GIF** (replace with real link):
+>
 >
 > ![Process Flow](https://example.com

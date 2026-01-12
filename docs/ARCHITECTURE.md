@@ -60,7 +60,7 @@ Diagrams available in `drawio/`:
 - `architecture.xml`
 - `fintech.drawio` (with AWS icons)
 
-> **Illustration GIF** (replace with real link):
+> 
 >
 > !Architecture Overview
 

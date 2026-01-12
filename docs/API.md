@@ -78,8 +78,9 @@ Todas as respostas de erro seguem o formato:
 ⏱️ Rate Limiting
 Exceder o limite retorna 429 Too Many Requests.
 
-GIF ilustrativo (substitua pelo link real):
-!API Flow
+
+API Flow
+
 🇺🇸 English
 🌍 Overview
 This document provides the specifications and usage guidelines for the Carrefour Core Banking Architecture API. It outlines available endpoints, request/response formats, and authentication methods.
@@ -153,5 +154,5 @@ All error responses follow this structure:
 ⏱️ Rate Limiting
 Exceeding the limit returns 429 Too Many Requests.
 
-Illustration GIF (replace with real link):
-!API Flow
+
+API Flow

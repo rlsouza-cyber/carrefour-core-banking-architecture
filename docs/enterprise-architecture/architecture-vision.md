@@ -22,7 +22,7 @@ Criar uma arquitetura core banking **robusta, escalável e segura** que suporte 
 - Implementar uma estratégia robusta de **gestão de APIs** para integração e troca de dados.  
 - Estabelecer um framework abrangente de **monitoramento e logging** para saúde e performance do sistema.
 
-> **GIF ilustrativo** (substitua pelo link real):
+
 >
 > !Architecture Vision
 
@@ -49,7 +49,7 @@ To create a **robust, scalable, and secure core banking architecture** that supp
 - Implement a robust **API management** strategy to facilitate integration and data exchange.  
 - Establish a comprehensive **monitoring and logging** framework to ensure system health and performance.
 
-> **Illustration GIF** (replace with real link):
+>
 >
 > !Architecture Vision
 

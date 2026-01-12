@@ -75,6 +75,6 @@
 - Processes must be auditable and traceable.
 - Microservices-based architecture facilitates integration and product evolution.
 
-> **Illustration GIF** (replace with real link):
+
 >
 > ![Banking Domain](https://example.com/gifs/banking-domain.gif
