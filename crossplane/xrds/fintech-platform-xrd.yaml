@@ -1,0 +1,64 @@
+
+apiVersion: apiextensions.crossplane.io/v1
+kind: CompositeResourceDefinition
+metadata:
+  name: xfintechplatforms.platform.fintech.example.org
+spec:
+  group: platform.fintech.example.org
+  names:
+    kind: XFintechPlatform
+    plural: xfintechplatforms
+  claimNames:
+    kind: FintechPlatform
+    plural: fintechplatforms
+  connectionSecretKeys:
+    - kubeconfig
+    - dbEndpoint
+    - dbUsername
+    - dbPassword
+  versions:
+    - name: v1alpha1
+      served: true
+      referenced: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                parameters:
+                  type: object
+                  properties:
+                    region:
+                      type: string
+                    eksVersion:
+                      type: string
+                      default: "1.29"
+                    vpcId:
+                      type: string
+                    subnetIds:
+                      type: array
+                      items:
+                        type: string
+                    eksConnectionSecretName:
+                      type: string
+                      default: fintech-eks-kubeconfig
+                    dbEngine:
+                      type: string
+                      default: postgres
+                    dbInstanceClass:
+                      type: string
+                      default: db.t3.micro
+                    dbName:
+                      type: string
+                      default: fintech
+                    dbMasterUsername:
+                      type: string
+                      default: fintech
+                    dbConnectionSecretName:
+                      type: string
+                      default: fintech-postgres-conn
+                  required:
+                    - region
+                    - subnetIds

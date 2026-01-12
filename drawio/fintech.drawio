@@ -1,0 +1,23 @@
+
+<mxfile host="app.diagrams.net" modified="2026-01-12T00:00:00.000Z" version="20.6.3">
+  <diagram id="diagram-1" name="Architecture Overview">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Carrefour Core Banking Architecture" style="text;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Applications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Infrastructure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="180" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Documentation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="180" height="100" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

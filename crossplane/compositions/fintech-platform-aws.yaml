@@ -1,0 +1,101 @@
+
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: xfintechplatforms.aws.platform.fintech.example.org
+  labels:
+    provider: aws
+spec:
+  compositeTypeRef:
+    apiVersion: platform.fintech.example.org/v1alpha1
+    kind: XFintechPlatform
+  environment:
+    connectionSecret:
+      name: fintech-platform-conn
+  resources:
+    - name: fintech-namespace
+      base:
+        apiVersion: v1
+        kind: Namespace
+        metadata:
+          name: fintech
+    - name: eks-cluster
+      base:
+        apiVersion: eks.aws.crossplane.io/v1beta1
+        kind: Cluster
+        spec:
+          forProvider:
+            region: us-east-1
+            version: "1.29"
+            roleArnRef:
+              name: crossplane-aws-role
+            resourcesVpcConfig:
+              subnetIds: []
+              endpointPrivateAccess: true
+              endpointPublicAccess: true
+          providerConfigRef:
+            name: aws-provider
+          writeConnectionSecretToRef:
+            name: fintech-eks-kubeconfig
+            namespace: crossplane-system
+      patches:
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.region
+          toFieldPath: spec.forProvider.region
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.eksVersion
+          toFieldPath: spec.forProvider.version
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.subnetIds
+          toFieldPath: spec.forProvider.resourcesVpcConfig.subnetIds
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.eksConnectionSecretName
+          toFieldPath: spec.writeConnectionSecretToRef.name
+    - name: rds-postgres
+      base:
+        apiVersion: rds.aws.crossplane.io/v1beta1
+        kind: DBInstance
+        spec:
+          forProvider:
+            region: us-east-1
+            dbInstanceClass: db.t3.micro
+            engine: postgres
+            masterUsername: fintech
+            publiclyAccessible: false
+            storageEncrypted: true
+            skipFinalSnapshotBeforeDeletion: true
+          providerConfigRef:
+            name: aws-provider
+          writeConnectionSecretToRef:
+            name: fintech-postgres-conn
+            namespace: crossplane-system
+      patches:
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.region
+          toFieldPath: spec.forProvider.region
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.dbInstanceClass
+          toFieldPath: spec.forProvider.dbInstanceClass
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.dbEngine
+          toFieldPath: spec.forProvider.engine
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.dbMasterUsername
+          toFieldPath: spec.forProvider.masterUsername
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.dbConnectionSecretName
+          toFieldPath: spec.writeConnectionSecretToRef.name
+    - name: s3-logs
+      base:
+        apiVersion: s3.aws.crossplane.io/v1beta1
+        kind: Bucket
+        spec:
+          forProvider:
+            region: us-east-1
+            acl: private
+          providerConfigRef:
+            name: aws-provider
+      patches:
+        - type: FromCompositeFieldPath
+          fromFieldPath: spec.parameters.region
+          toFieldPath: spec.forProvider.region

@@ -1,0 +1,22 @@
+
+apiVersion: platform.fintech.example.org/v1alpha1
+kind: FintechPlatform
+metadata:
+  name: fintech-platform
+spec:
+  compositionSelector:
+    matchLabels:
+      provider: aws
+  parameters:
+    region: us-east-1
+    eksVersion: "1.29"
+    vpcId: vpc-xxxxxxxx
+    subnetIds:
+      - subnet-aaa11111
+      - subnet-bbb22222
+    eksConnectionSecretName: fintech-eks-kubeconfig
+    dbEngine: postgres
+    dbInstanceClass: db.t3.micro
+    dbName: fintech
+    dbMasterUsername: fintech
+    dbConnectionSecretName: fintech-postgres-conn

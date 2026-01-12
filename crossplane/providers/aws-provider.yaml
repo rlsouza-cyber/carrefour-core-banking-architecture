@@ -1,0 +1,18 @@
+apiVersion: crossplane.io/v1alpha1
+kind: Provider
+metadata:
+  name: aws
+spec:
+  package: crossplane/provider-aws:latest
+  controller: aws-controller
+  credentials:
+    source: Secret
+    secretRef:
+      namespace: crossplane-system
+      name: aws-creds
+      key: creds
+  config:
+    region: us-west-2
+    assumeRole: true
+    roleArn: arn:aws:iam::123456789012:role/CrossplaneRole
+    externalSecret: true
