@@ -1,35 +1,95 @@
-# carrefour-core-banking-architecture
+🔥 Carrefour Core Banking Architecture
+!Arquitetura
 
-## Overview
-The Carrefour Core Banking Architecture project aims to provide a comprehensive framework for developing and deploying fintech services. This architecture leverages modern cloud-native technologies and practices to ensure scalability, reliability, and maintainability.
+🌍 Visão Geral
+O projeto Carrefour Core Banking Architecture é um framework completo para desenvolvimento e implantação de serviços financeiros (fintech).
+Ele utiliza tecnologias cloud-native modernas para garantir escalabilidade, resiliência e manutenibilidade.
 
-## Purpose
-This project serves as a blueprint for building core banking applications, integrating various services, and managing infrastructure using Kubernetes and Crossplane.
+🎯 Propósito
+Este projeto serve como blueprint para:
 
-## Setup Instructions
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/carrefour-core-banking-architecture.git
-   cd carrefour-core-banking-architecture
-   ```
+Construção de aplicações core banking.
+Integração de serviços financeiros.
+Gestão de infraestrutura via Kubernetes e Crossplane.
 
-2. **Install dependencies:**
-   Ensure you have Docker, Kubernetes, and Crossplane installed on your machine.
 
-3. **Configure Crossplane:**
-   - Apply the Crossplane configurations located in the `crossplane` directory.
-   - Set up the AWS provider as specified in `crossplane/providers/aws-provider.yaml`.
+🔧 Setup Instructions
 
-4. **Deploy the services:**
-   Use the deployment scripts located in the `scripts` directory to deploy the notification service and transaction API.
 
-## Usage Guidelines
-- Refer to the `docs` directory for detailed documentation on API specifications, architectural decisions, deployment instructions, and troubleshooting.
-- Use the `drawio` directory for architecture diagrams that provide visual insights into the system design.
-- The `k8s` directory contains Kubernetes manifests for deploying and managing the services in a Kubernetes cluster.
+Clone o repositório:
+Shellgit clone https://github.com/rlsouza-cyber/carrefour-core-banking-architecture.gitcd carrefour-core-banking-architectureShow more lines
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
-## License
-This project is licensed under the terms of the LICENSE file.
+Instale as dependências:
+
+Docker
+Kubernetes (kubectl)
+Crossplane
+
+
+
+Configure o Crossplane:
+
+Aplique as configurações em crossplane/.
+Configure o provider AWS conforme crossplane/providers/aws-provider.yaml.
+
+
+
+Deploy dos serviços:
+Shellcd scriptsbash deploy.shShow more lines
+
+
+
+🚀 Quick Start
+
+Testar serviços via Ingress:
+Shell HOST=http://fintech-domain.com bash test.shShow more lines
+
+Limpar recursos:
+Shell bash cleanup.shShow more lines
+
+
+
+📚 Documentação
+
+Arquitetura Geral
+Enterprise Architecture (TOGAF, DDD)
+APIs
+Deployment Guide
+Troubleshooting
+
+
+🖼️ Diagramas
+
+Diagramas draw.io disponíveis em drawio/:
+
+architecture-vision-basic.drawio
+architecture-vision-aws.drawio (com ícones AWS)
+
+
+Exportar para PNG/SVG para apresentações.
+
+
+🛠️ Infraestrutura
+
+Kubernetes Manifests: k8s/ (namespaces, apps, security, monitoring)
+Crossplane: crossplane/ (XRD, Composition, Claim)
+Docker: docker/ (transaction-api, notification-service)
+Scripts: scripts/ (deploy, cleanup, test)
+
+
+✅ Tecnologias
+
+🐳 Docker
+☸️ Kubernetes
+🔗 Crossplane
+🏗️ AWS (EKS, RDS, S3)
+📈 Prometheus & Grafana
+
+
+🤝 Contribuições
+Contribuições são bem-vindas!
+Abra um Pull Request ou Issue para melhorias ou correções.
+
+📜 Licença
+Este projeto está licenciado sob os termos do arquivo LICENSE.
