@@ -31,9 +31,10 @@ Diagramas disponíveis em `drawio/`:
 - `architecture.xml`
 - `fintech.drawio` (com ícones AWS)
 
-> **GIF ilustrativo** (substitua pelo link real):
+
 >
-> ![Architecture Overview](https://example.com/gifs/architecture.gifThis document outlines the architectural decisions and design principles that guide the development of the **Carrefour Core Banking Architecture** project. It serves as a reference for understanding the structure, components, and interactions within the system.
+> [Architecture Overview]
+> (carrefour-core-banking-architecture/docs/Arq_BC.jpg)
 
 ### 🎯 Architectural Goals
 - **Scalability**: Designed to handle increasing loads by scaling components independently.
@@ -62,8 +63,7 @@ Diagrams available in `drawio/`:
 
 > 
 >
-> !Architecture Overview
-
+>  
 ---
 
 ### 🏁 Conclusion
