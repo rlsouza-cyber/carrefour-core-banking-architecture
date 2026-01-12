@@ -1,5 +1,5 @@
 🔥 Carrefour Core Banking Architecture
-!Arquitetura
+
 
 🌍 Visão Geral
 O projeto Carrefour Core Banking Architecture é um framework completo para desenvolvimento e implantação de serviços financeiros (fintech).
@@ -87,8 +87,7 @@ Scripts: scripts/ (deploy, cleanup, test)
 📈 Prometheus & Grafana
 
 
-🤝 Contribuições
-Contribuições são bem-vindas!
+🤝 Contribuições são bem-vindas!
 Abra um Pull Request ou Issue para melhorias ou correções.
 
 📜 Licença
