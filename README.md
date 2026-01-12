@@ -31,8 +31,6 @@ bash scripts/cleanup.sh
 Pull Requests e Issues são bem-vindos!
 📜 Licença: Consulte LICENSE.
 
-GIF ilustrativo (substitua pelo link real):
-!Deploy GIF
 
 
 🇺🇸 English
@@ -62,6 +60,3 @@ bash scripts/cleanup.sh
 🤝 Contributions
 Pull Requests and Issues are welcome!
 📜 License: See LICENSE.
-
-Illustration GIF (replace with real link):
-!Deploy GIF
