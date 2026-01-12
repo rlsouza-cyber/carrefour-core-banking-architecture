@@ -1,51 +1,50 @@
-# Business Capabilities Map
 
-## Overview
-This document outlines the business capabilities of the organization, providing a structured view of the essential functions and services that support the overall business strategy.
+# 🗺️ Mapa de Capacidades de Negócio (DDD Estratégico) / Business Capabilities Map
 
-## Business Capabilities
+## 🇧🇷 Português
 
-### 1. Customer Management
-- **Description**: Manage customer relationships and interactions.
-- **Key Activities**:
-  - Customer onboarding
-  - Customer support
-  - Customer feedback management
+### ✅ Capacidades e Domínios
+| Capacidade                  | Domínio         | Classificação | Descrição                               |
+|-----------------------------|-----------------|--------------|-----------------------------------------|
+| Gestão de Contas            | Core Banking    | Core         | Abrange abertura, manutenção e encerramento |
+| Gestão de Cashback          | Engajamento     | Supporting   | Gerencia regras, cálculo e distribuição |
+| Compliance e Risco          | Suporte         | Supporting   | Validações regulatórias e prevenção a fraudes |
+| Integração com Parceiros    | Engajamento     | Supporting   | APIs para parceiros de cashback         |
+| Notificações                | Comunicação     | Supporting   | Envio de alertas e confirmações         |
 
-### 2. Product Management
-- **Description**: Oversee product lifecycle from development to retirement.
-- **Key Activities**:
-  - Product development
-  - Product marketing
-  - Product performance analysis
+### 🎯 Estratégia DDD
+- **Domínios Core**: Gestão de Contas, Compliance.
+- **Domínios de Suporte**: Notificações, Integração, Cashback.
+- **Bounded Contexts** definidos para cada capacidade.
 
-### 3. Transaction Processing
-- **Description**: Facilitate and manage financial transactions.
-- **Key Activities**:
-  - Payment processing
-  - Transaction reconciliation
-  - Fraud detection and prevention
+### 🛠️ Padrão Tático DDD
+- **Aggregates**: Conta, Cashback, Transação.
+- **Entities**: Cliente, Parceiro.
+- **Value Objects**: Endereço, Documento.
+- **Services**: Serviço de cálculo de cashback, serviço de notificação.
 
-### 4. Compliance and Risk Management
-- **Description**: Ensure adherence to regulations and manage risks.
-- **Key Activities**:
-  - Regulatory reporting
-  - Risk assessment
-  - Compliance audits
+> **GIF ilustrativo** (substitua pelo link real):
+>
+> ![Business Capabilities](https://example.com/gifs/business-capabilities.gifs
+| Capability                  | Domain          | Classification | Description                              |
+|-----------------------------|-----------------|---------------|------------------------------------------|
+| Account Management          | Core Banking    | Core          | Covers opening, maintenance, and closure |
+| Cashback Management         | Engagement      | Supporting    | Manages rules, calculation, and distribution |
+| Compliance and Risk         | Support         | Supporting    | Regulatory validations and fraud prevention |
+| Partner Integration         | Engagement      | Supporting    | APIs for cashback partners               |
+| Notifications               | Communication   | Supporting    | Sending alerts and confirmations         |
 
-### 5. Reporting and Analytics
-- **Description**: Analyze data to support decision-making.
-- **Key Activities**:
-  - Data collection and storage
-  - Business intelligence reporting
-  - Performance metrics analysis
+### 🎯 DDD Strategy
+- **Core Domains**: Account Management, Compliance.
+- **Supporting Domains**: Notifications, Integration, Cashback.
+- **Bounded Contexts** defined for each capability.
 
-### 6. Integration and API Management
-- **Description**: Manage integrations with external systems and APIs.
-- **Key Activities**:
-  - API development and management
-  - Integration with third-party services
-  - Monitoring and maintaining API performance
+### 🛠️ Tactical DDD Pattern
+- **Aggregates**: Account, Cashback, Transaction.
+- **Entities**: Customer, Partner.
+- **Value Objects**: Address, Document.
+- **Services**: Cashback calculation service, notification service.
 
-## Conclusion
-This business capabilities map serves as a foundation for aligning IT initiatives with business objectives, ensuring that all capabilities are adequately supported and optimized for performance.
+> **Illustration GIF** (replace with real link):
+>
+> ![Business Capabilities](https://

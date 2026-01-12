@@ -1,47 +1,103 @@
-# Value Chain Analysis
 
-## Introduction
-The value chain analysis is a strategic tool used to identify the primary and support activities that create value for customers and contribute to the competitive advantage of the organization. This document outlines the key components of the value chain specific to the carrefour-core-banking-architecture project.
+# 🔗 Value Chain Analysis
 
-## Primary Activities
+## 🇧🇷 Português
 
+### 🌍 Introdução
+A análise da cadeia de valor é uma ferramenta estratégica usada para identificar as atividades primárias e de suporte que criam valor para os clientes e contribuem para a vantagem competitiva da organização. Este documento descreve os principais componentes da cadeia de valor específicos do projeto **Carrefour Core Banking Architecture**.
+
+### ✅ Atividades Primárias
 1. **Inbound Logistics**
-   - Description of how resources are acquired and managed.
-   - Key processes involved in receiving, warehousing, and inventory management.
+   - Como os recursos são adquiridos e gerenciados.
+   - Processos-chave de recebimento, armazenamento e gestão de inventário.
 
-2. **Operations**
-   - Overview of the core banking operations.
-   - Description of how services are processed and delivered to customers.
+2. **Operações**
+   - Visão geral das operações de core banking.
+   - Como os serviços são processados e entregues aos clientes.
 
 3. **Outbound Logistics**
-   - Explanation of how services are distributed to customers.
+   - Como os serviços são distribuídos aos clientes.
+   - Principais canais utilizados para entrega.
+
+4. **Marketing e Vendas**
+   - Estratégias para promover serviços.
+   - Processos de vendas e engajamento do cliente.
+
+5. **Serviço**
+   - Suporte ao cliente e gestão de serviços.
+   - Processos para lidar com dúvidas e problemas.
+
+### ✅ Atividades de Suporte
+1. **Procurement**
+   - Como recursos e serviços são adquiridos.
+   - Principais relacionamentos com fornecedores.
+
+2. **Desenvolvimento Tecnológico**
+   - Iniciativas tecnológicas que suportam operações.
+   - Ferramentas e plataformas utilizadas.
+
+3. **Gestão de Recursos Humanos**
+   - Estratégias para recrutamento, treinamento e retenção.
+   - Cultura organizacional e engajamento.
+
+4. **Infraestrutura da Empresa**
+   - Estrutura organizacional e sistemas de gestão.
+   - Governança e compliance.
+
+> **GIF ilustrativo** (substitua pelo link real):
+>
+> !Value Chain
+
+---
+
+## 🇺🇸 English
+
+### 🌍 Introduction
+Value chain analysis is a strategic tool used to identify the primary and support activities that create value for customers and contribute to the organization's competitive advantage. This document outlines the key components of the value chain specific to the **Carrefour Core Banking Architecture** project.
+
+### ✅ Primary Activities
+1. **Inbound Logistics**
+   - How resources are acquired and managed.
+   - Key processes for receiving, warehousing, and inventory management.
+
+2. **Operations**
+   - Overview of core banking operations.
+   - How services are processed and delivered to customers.
+
+3. **Outbound Logistics**
+   - How services are distributed to customers.
    - Key channels used for service delivery.
 
 4. **Marketing and Sales**
-   - Strategies employed to promote services.
-   - Description of sales processes and customer engagement.
+   - Strategies to promote services.
+   - Sales processes and customer engagement.
 
 5. **Service**
-   - Overview of customer support and service management.
-   - Key processes for handling customer inquiries and issues.
+   - Customer support and service management.
+   - Processes for handling inquiries and issues.
 
-## Support Activities
-
+### ✅ Support Activities
 1. **Procurement**
-   - Description of how resources and services are sourced.
-   - Key relationships with suppliers and vendors.
+   - How resources and services are sourced.
+   - Key supplier relationships.
 
 2. **Technology Development**
-   - Overview of technology initiatives that support operations.
-   - Description of tools and platforms used in service delivery.
+   - Technology initiatives supporting operations.
+   - Tools and platforms used in service delivery.
 
 3. **Human Resource Management**
    - Strategies for recruiting, training, and retaining talent.
-   - Overview of organizational culture and employee engagement.
+   - Organizational culture and employee engagement.
 
 4. **Firm Infrastructure**
-   - Description of the organizational structure and management systems.
-   - Overview of governance and compliance frameworks.
+   - Organizational structure and management systems.
+   - Governance and compliance frameworks.
 
-## Conclusion
-The value chain analysis provides insights into how the carrefour-core-banking-architecture project creates value and identifies opportunities for improvement. By optimizing each component of the value chain, the organization can enhance its competitive position and better serve its customers.
+> **Illustration GIF** (replace with real link):
+>
+> !Value Chain
+
+---
+
+### 🏁 Conclusion
+Optimizing each component of the value chain enhances competitive positioning and improves customer service.
