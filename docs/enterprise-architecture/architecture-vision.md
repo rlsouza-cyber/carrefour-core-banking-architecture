@@ -24,7 +24,7 @@ Criar uma arquitetura core banking **robusta, escalável e segura** que suporte 
 
 
 >
-> !Architecture Vision
+> Architecture Vision
 
 ---
 

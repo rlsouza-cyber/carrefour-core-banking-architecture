@@ -75,6 +75,7 @@ Todas as respostas de erro seguem o formato:
     "message": "string"
   }
 }
+
 ⏱️ Rate Limiting
 Exceder o limite retorna 429 Too Many Requests.
 
@@ -151,8 +152,7 @@ All error responses follow this structure:
     "message": "string"
   }
 }
+
 ⏱️ Rate Limiting
 Exceeding the limit returns 429 Too Many Requests.
 
-
-API Flow
